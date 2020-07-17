@@ -195,7 +195,7 @@ saveas(hq,[name_file '_if.eps'],'epsc')
 
 addpath('.\ALIF')
 
-opt = Settings_ALIF('ALIF.NIMTs',1,'plots',0,'saveplots',0,'ALIF.xi',1.4,'ALIF.delta',10^-6);
+opt = Settings_ALIF('ALIF.NIMFs',1,'plots',0,'saveplots',0,'ALIF.xi',1.4,'ALIF.delta',10^-6);
 
 mask2 = opt.ALIF.xi*1./M_n(:,1)'*Hz;
 

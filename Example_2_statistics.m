@@ -97,28 +97,28 @@ for i=1:Ncases
     
     % First component
     
-    opt = Settings_ALIF('ALIF.NIMTs',1,'plots',0,'saveplots',0,'ALIF.xi',1.1,'ALIF.delta',10^-6);
+    opt = Settings_ALIF('ALIF.NIMFs',1,'plots',0,'saveplots',0,'ALIF.xi',1.1,'ALIF.delta',10^-6);
     
     mask1 = opt.ALIF.xi*1./(M_n(:,1)')*Hz;
     
     IMT1=ALIFv5_1(xm(:,i),opt,mask1);
     
     % second IMT
-    opt = Settings_ALIF('ALIF.NIMTs',1,'plots',0,'saveplots',0,'ALIF.xi',1.4,'ALIF.delta',10^-6);
+    opt = Settings_ALIF('ALIF.NIMFs',1,'plots',0,'saveplots',0,'ALIF.xi',1.4,'ALIF.delta',10^-6);
     
     mask2 = opt.ALIF.xi*1./M_n(:,1)'*Hz;
     
     IMT2=ALIFv5_1(IMT1(2,:),opt,mask2);
     
     % third IMT
-    opt = Settings_ALIF('ALIF.NIMTs',1,'plots',0,'saveplots',0,'ALIF.xi',1.1,'ALIF.delta',10^-6);
+    opt = Settings_ALIF('ALIF.NIMFs',1,'plots',0,'saveplots',0,'ALIF.xi',1.1,'ALIF.delta',10^-6);
     
     mask3 = opt.ALIF.xi*1./(M_n(:,2)')*Hz;
     
     IMT3=ALIFv5_1(IMT2(2,:),opt,mask3);
     
     % fourth IMT
-    opt = Settings_ALIF('ALIF.NIMTs',1,'plots',0,'saveplots',0,'ALIF.xi',1.4,'ALIF.delta',10^-6);
+    opt = Settings_ALIF('ALIF.NIMFs',1,'plots',0,'saveplots',0,'ALIF.xi',1.4,'ALIF.delta',10^-6);
     
     mask4 = opt.ALIF.xi*1./(M_n(:,2)')*Hz;
     
